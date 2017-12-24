@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cossie Play</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script>
+function hidefloater()
+{
+	var a = document.getElementById("floater");
+	a.style.display="none"
+	var b = document.getElementById("floater2");
+	b.style.display="none"
+}
+function hidefloater1()
+{
+	var a = document.getElementById("floater");
+	a.style.display="none"
+	alert("Your Order has been placed."); 
+}
+function showfloater()
+{
+var a = document.getElementById("floater");
+a.style.display="block";
+}
+function hidefloater2()
+{
+	var b = document.getElementById("floater2");
+	b.style.display="none"
+	alert("You have signed up for party.");
+}
+function showfloater2()
+{
+var b = document.getElementById("floater2");
+var a = document.getElementById("floater");
+if(a.style.display=="block")
+{
+b.style.display="none";	
+}
+else
+{
+b.style.display="block";
+}
+}
+</script>
+</head>
+
+<body>
+<header>
+<div id="logo"><a href="index.html"><img src="images/Logo.png" id="logo_bg"></a></div>
+<div id="menu_main">
+<div class="menu"><a href="index.html">HOME</a></div>
+<div class="menu"><a id="active" href="#">ABOUT US</a></div>
+<div class="menu"><a href="price.html">PRICE</a></div>
+</div>
+<div id="hside"><img src="images/header_bg.png" id="hside_bg"></div>
+</header>
+<!--<div id="middle"><img src="images/bg_header.jpg" id="h_bg"></div>-->
+<div id="middle">
+<div id="content">
+<div id="floater"><h3 onClick="hidefloater();">X</h3>
+<h2>Order Costume of Your Choice</h2>
+<form action="">
+<input class="input" type="text" placeholder="Enter Your Name" required>
+<input class="input" type="text" placeholder="Enter Your Phone No." required>
+<input class="input" type="text" placeholder="Description of Costume" required style="width:87%; height:40px;">
+<Select class="input">
+<option>Select Size</option>
+<option>XS</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+<option>XXXL</option>
+</Select>
+<div class="button" onClick="hidefloater1();">Place Order</div>
+</form>
+</div>
+
+<div id="floater2"><h3 onClick="hidefloater();">X</h3>
+<h2>Become a Part of CossiePlay Party</h2>
+<form action="">
+<input class="input" type="text" placeholder="Enter Your Name" required>
+<input class="input" type="text" placeholder="Enter Your Phone No." required>
+<input class="input" type="text" placeholder="No of Persons" required>
+<Select class="input">
+<option>Select Date</option>
+<option>24/Dec/2017</option>
+<option>6/Jan/2017</option>
+<option>3/Feb/2017</option>
+<option>3/March/2017</option>
+<option>7/April/2017</option>
+</Select>
+<div class="button" onClick="hidefloater2();">Sign Up</div>
+<div id="partyg">
+<h2>Party Guidelines</h2>
+<ul>
+<li>CossiePlay party-goers party at their own risk and are responsible for their own safety.</li><li> Check with your doctor before you party hard.</li><li>
+Party fees must be paid at the door. Cash or EFTPOS accepted. Credit card payments attract a 2% surcharge.</li><li> Alcohol is served at the bar to over 18s only.</li><li> No intoxicated persons will be served, but will be escorted to a taxi – paid by the party-goer. </li>
+
+</ul></div>
+</form>
+</div>
+<div id="content2">
+<p>
+CossiePlay is a family-run business, operating in Hulkstown since 2012. We create outstanding custom-made costumes. Cosplayers can order any kind of costume - from simple Spiderman or elf costumes right up to costumes including advanced features like armour, animatronics, realistic weaponry and working force fields. Depending on the difficulty, costumes take between 1 and 50 weeks and cost between $10 and $10,000.</p><p>
+We buy and sell second-hand costumes <a href="price.html">a price list is available</a> as well.</p><p>
+On the first Saturday of every month we hold a “CossiePlay Party” at the town hall. Entry is $15 for adults, $10 for ages 6-17 and kids under 6 are free. Each entry includes one non-alcoholic drink and a glow stick. Parties start at 6pm and run until 11pm. There is always a live DJ at the party (who takes requests) and dancing is common (but not required). 
+</p></div>
+</div></div>
+<div id="btn">
+<a onClick="showfloater();"><div id="btn_bg" ></div></a>
+<a onClick="showfloater2();"><div id="btn_bg2"></div></a>
+</div>
+<footer>
+<p>Copyright (c) All rights reserved.</p>
+<div id="add">
+<p>Address: 4 Stanton Avenue, Hulkstwon.</p>
+<p>Phone: 07 4771 1234</p>
+<p>E-mail: cossieplay@ gmail.com</p>
+<p>Fax: 07-4771 1235</p></div>
+</footer>
+</body>
+</html>
